@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #26f;
+}
+
+aside{
+    color: #ececec;
+    padding: 1.5rem;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.logo{
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boton-menu{
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    color: #ececec;
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+    gap: 1rem;
+    white-space: nowrap;
+    padding: 1rem;
+}
+
+.boton-menu.active{
+    background-color: #ececec;
+    color: #26f;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.bi-hand-index-thumb-fill, 
+.bi-hand-index-thumb{
+    transform: rotateZ(90deg);
+}
+
+.texto-footer{
+    color: #dddb;
+    font-size: .85rem;
+    font-weight: 200;
+}
+
+main{
+    background-color: #ececec;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.titulo-principal{
+    color: #26f;
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.producto-img{
+    max-width: 100%;
+    border-radius: 1rem;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+}
+
+.producto-detalles{
+    background-color: #26f;
+    color: #ececec;
+    padding: .5rem;
+    border-radius: .5rem; 
+    margin-top: -.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color: #ececec;
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #ececec;
+    transition: background-color .3s;
+}
+
+.producto-agregar:hover{
+    background-color: #26f;
+    color: #ececec;
+}
