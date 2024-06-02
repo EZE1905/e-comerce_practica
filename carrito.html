@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a class="boton-menu boton-volver" href="index.html"><i class="bi bi-box-arrow-in-left"></i>Seguir comprando</a></li>
-                    <li><a class="boton-menu boton-carrito active" href="carrito.html"><i class="bi bi-cart-fill"></i>Carrito</a><span class="numerito"></span></li>
+                    <li><a class="boton-menu boton-carrito active" href="carrito.html"><i class="bi bi-cart-fill"></i>Carrito</a></li>
                 </ul>
             </nav>
             <footer>
@@ -29,9 +29,9 @@
             <div class="contenedor-carrito">
                 <p class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
 
-                <div class="carrito-productos">
+                <div class="carrito-productos disabled">
                     <div class="carrito-producto">
-                        <img src="img/auris 01.jpg" alt="">
+                        <img class="carrito-producto-imagen" src="img/auris 01.jpg" alt="">
                         <div class="carrito-producto-titulo">
                             <small>Titulo</small>
                             <h3>Auriculares</h3>
@@ -54,11 +54,8 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                
-                <div class="carrito-productos">
                     <div class="carrito-producto">
-                        <img src="img/auris 02.jpg" alt="">
+                        <img class="carrito-producto-imagen" src="img/auris 02.jpg" alt="">
                         <div class="carrito-producto-titulo">
                             <small>Titulo</small>
                             <h3>Auriculares</h3>
@@ -83,18 +80,20 @@
                     </div>
                 </div>
 
-                <div class="carrito-acciones">
+                <div class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
                         <button class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
                     <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
-                            <small>Total</small>
+                            <small>Total:</small>
                             <p>$12000</p>
                         </div>
                         <button class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
+
+                <p class="carrito-comprado disabled">Muchas gracias por su compra. <i class="bi bi-emoji-laughing"></i></p>
 
             </div>
         </main>
