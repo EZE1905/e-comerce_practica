@@ -43,6 +43,7 @@ aside{
 }
 
 .boton-menu{
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -59,7 +60,6 @@ aside{
 .boton-menu.active{
     background-color: #ececec;
     color: #26f;
-    width: 100%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     position: relative;
